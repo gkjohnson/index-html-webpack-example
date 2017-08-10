@@ -1,5 +1,3 @@
-const IndexPackerPlugin = require('../index-packer-plugin.js')
-
 module.exports = {
     entry: __dirname + '/index.html',
     output: {
@@ -18,7 +16,5 @@ module.exports = {
                 use: [{ loader: 'babel-loader' }]
             }
         ]
-    },
-
-    plugins: [new IndexPackerPlugin()]
+    }
 }
