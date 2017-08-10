@@ -10,6 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "@polymer/polymer": "^2.0.2",
-    "@webcomponents/webcomponentsjs": "^1.0.7"
+    "@webcomponents/webcomponentsjs": "^1.0.7",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "wc-loader": "^1.1.12"
   }
 }
