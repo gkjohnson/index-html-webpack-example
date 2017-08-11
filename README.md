@@ -12,6 +12,8 @@ Using `babel-loader` and `wc-loader`, the whole `index.html`, javascript include
 
 Including this script into a complete empty html file asside from the `html`, `head`, and `body` tags ([literally that's all](dist/index-bundle.html)) will run the page as it was before being bundled.
 
+TODO: It seems the `wc-loader` may not be the best solution for this. In another project it seemed that some styles were lost and some javascript was not getting added into the page properly (THREE.js, fore example)
+
 ## Total Solution
 TODO: Figure out how to output multiple root files and auto-generate the referenced `index-bundle.html` file with either inlined or `src`-referenced script tag
 
