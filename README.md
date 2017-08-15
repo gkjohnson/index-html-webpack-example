@@ -1,10 +1,10 @@
 # index-html-webpack-example
 
-Example project showing how to using webpack to bundle a vanilla `index.html` webpage.
+Example project showing how to use webpack to bundle a vanilla `index.html` webpage.
 
 ## The Problem
 
-Webpack is built for preprocessing, transpiling, scoping, and bundling projects into a single javascript file to be included into a webpage, but what if you have a basic client application using only native functionality? How can webpack be used to build a single javascript bundle along side the `index.html` file that imports it for a deployment?
+Webpack is built for preprocessing, transpiling, scoping, and bundling projects into a single javascript file to be included in a webpage, but what if you have a basic client application using only native functionality? How can webpack be used to build a single javascript bundle along side the `index.html` file that imports it for a deployment?
 
 ## The Solution
 
