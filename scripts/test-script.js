@@ -1,1 +1,1 @@
-console.log("HELLO! Script loaded...")
+console.log('script.js executed')

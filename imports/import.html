@@ -1,0 +1,31 @@
+<script type="text/javascript" src="../node_modules/three/build/three.js"></script>
+<script type="text/javascript">
+    console.log('import.html script executed')
+    if(window.THREE) console.log('THREE js included in import.html', window.THREE)
+    else console.error('THREE js not included in import.html')
+</script>
+
+<dom-module id="imported-element">
+    <template>
+        <style>
+            :host {
+                display: inline-block;
+                background: #009688;
+                color: white;
+                padding: 5px;
+            }
+        </style>
+        <div>
+            Imported Element
+        </div>
+    </template>
+</dom-module>
+<script>
+    class IncludedElement extends Polymer.Element {
+        static get is() { return 'imported-element' }
+        static get properties() {
+            return { THREE: { value: () => window.THREE } }
+        }
+    }
+    customElements.define(IncludedElement.is, IncludedElement)
+</script>
