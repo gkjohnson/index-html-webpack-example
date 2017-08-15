@@ -15,6 +15,12 @@ The config can convert a basic [index.html](index.html) file into a fully bundle
 
 Console logs show that the different elements and scripts are made available at the expected times.
 
+#### Building and Running
+
+From the `/example` folder, run `npm run build` to build out the `/dist/index.bundle.js` and `/dist/index-bundle.html` files from the original `index.html`.
+
+Once built, run `npm run serve` to run a stati server and load the page at `localhost:9080/example/dist/`!
+
 ## What's Left
 
 ##### Multiple App Files
