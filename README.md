@@ -8,16 +8,16 @@ Webpack is built for preprocessing, transpiling, scoping, and bundling projects 
 
 ## The Solution
 
-The [webpack config file](webpack.config.js) used here will process a full application's index.html file into a [.js file](dist/index.bundle.js) and an [.html file](dist/index-bundle.html) that imports it using `babel-loader`, `script-loader`, and `wc-loader`. The build will inject the index `<head>` and `<body>` content at run time once the script runs.
+The [webpack config file](webpack.config.js) used here will process a full application's index.html file into a [.js file](dist/index.bundle.js) and an [.html file](dist/index.bundle.html) that imports it using `babel-loader`, `script-loader`, and `wc-loader`. The build will inject the index `<head>` and `<body>` content at run time once the script runs.
 
 ## Demo
-The config can convert a basic [index.html](index.html) file into a fully bundled page consisting of [two files](https://gkjohnson.github.io/index-html-webpack-example/dist/index-bundle.html).
+The config can convert a basic [index.html](index.html) file into a fully bundled page consisting of [two files](https://gkjohnson.github.io/index-html-webpack-example/dist/index.bundle.html).
 
 Console logs show that the different elements and scripts are made available at the expected times.
 
 #### Building and Running
 
-From the `/example` folder, run `npm run build` to build out the `/dist/index.bundle.js` and `/dist/index-bundle.html` files from the original `index.html`.
+From the `/example` folder, run `npm run build` to build out the `/dist/index.bundle.js` and `/dist/index.bundle.html` files from the original `index.html`.
 
 Once built, run `npm run serve` to run a stati server and load the page at `localhost:9080/example/dist/`!
 
