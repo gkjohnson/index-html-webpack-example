@@ -10,16 +10,16 @@ module.exports = {
         rules: [
             {
                 test: /\.html$/,
-                use: [{ loader: 'babel-loader' }, { loader: 'wc-loader' }]
+                use: [{ loader: 'wc-loader' }]
             },
             {
                 test: /\.js$/,
-                use: [{ loader: 'script-loader' }, { loader: 'babel-loader' }]
+                use: [{ loader: 'script-loader' }]
             }
         ]
     },
 
     plugins: [
-        new HtmlWebpackPlugin({ filename: 'index-bundle.html' })
+        new HtmlWebpackPlugin({ filename: 'index.bundle.html' })
     ]
 }
