@@ -22,6 +22,8 @@ From the `/example` folder, run `npm run build` to build out the `/dist/index.bu
 Once built, run `npm run serve` to run a stati server and load the page at `localhost:9080/example/dist/`!
 
 ## What's Left
+##### Aggresive <title> Tags
+The `html-webpack-plugin` will _always_ generate a title tag with its default template even it one isn't specified or declared as `null`. This prevents any injected title tags from being respected meaning that you have to go in and modify the webpack config if you ever want to change the title tag. I've submitted a PR [here](https://github.com/jantimon/html-webpack-plugin/pull/766) to support this use case.
 
 ##### Multiple App Files
 The `html-webpack-plugin` does not seem to support building multi-page applications with this use case. If there are multiple source files built with the config, then they will all be included in the single output html file. However, if you are building an app with multiple pages (an `index.html`, `about.html`, and `app.html` pages, for example, then they should all be able to be taken in as entry files and optionally get their own html pages output.
