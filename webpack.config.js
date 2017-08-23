@@ -20,6 +20,9 @@ module.exports = {
     },
 
     plugins: [
-        new HtmlWebpackPlugin({ filename: 'index.bundle.html' })
+        new HtmlWebpackPlugin({
+            template: './empty-template.ejs',
+            filename: 'index.bundle.html'
+        })
     ]
 }
